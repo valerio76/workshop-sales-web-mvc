@@ -7,9 +7,13 @@
 
 <p>Sellers index page.</p>
 
+<p>
+  <a asp-action="Create" class="btn btn-success">Create New</a>
+</p>
+
 <table class="table table-striped table-hover">
     <thead>
-        <tr class="alert-danger">
+        <tr class="danger">
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -28,7 +32,7 @@
     <tbody>
         @foreach (var item in  Model)
         {
-        <tr class="bg-warning">
+        <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
