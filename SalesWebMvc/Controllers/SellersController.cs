@@ -32,7 +32,6 @@ namespace SalesWebMvc.Controllers
         {
             _sellerService.Insert(seller);
             return RedirectToAction(nameof(Index));
-        }
-            
+        }           
     }
 }
